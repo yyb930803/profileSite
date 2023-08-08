@@ -1,0 +1,481 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.font-one {
+  font-size: 70px;
+  color: white;
+}
+
+.font-four {
+  font-size: 50px;
+  color: white;
+}
+
+.font-two {
+  font-size: 30px;
+  color: white;
+}
+
+.font-five {
+  font-size: 30px;
+  color: white;
+}
+
+.font-three {
+  font-size: 15px;
+  color: white;
+}
+
+.font-six {
+  font-size: 20px;
+  color: white;
+}
+
+.font-seven {
+  line-height: 0.9em;
+  font-size: 135px;
+  color: white;
+}
+
+.border-one {
+  border-right: 1px solid white;
+}
+
+.card-img {
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.bg-img {
+  background-position: center;
+  background-size: cover;
+  transition: transform .5s linear;
+}
+
+.bg-grad {
+  background: linear-gradient(#ffffff00, #650da7a6);
+  opacity: 0;
+  transition: .5s linear;
+}
+
+.bg-img:hover {
+  transform: scale(1.1);
+}
+
+.bg-grad:hover {
+  opacity: 1;
+}
+
+.page {}
+
+.page:hover {
+  color: rgb(202, 255, 0);
+  cursor: pointer;
+}
+
+.page-icon {
+  width: 54px;
+  height: 44px;
+  margin-bottom: 5px;
+}
+
+.page-icon-two {
+  margin-left: 20px;
+  width: 61px;
+  height: 50px;
+}
+
+.cr-mt {
+  margin-top: 50px;
+}
+
+@media (max-width: 576px) {
+  .font-one {
+    font-size: 32px;
+  }
+
+  .font-four {
+    font-size: 25px;
+  }
+
+  .font-two {
+    font-size: 20px;
+  }
+
+  .font-five {
+    font-size: 17px;
+  }
+
+  .font-three {
+    font-size: 12px;
+  }
+
+  .font-six {
+    font-size: 14px;
+  }
+
+  .font-seven {
+    font-size: 45px;
+    color: white;
+  }
+
+  .border-one {
+    border-right: none;
+    border-bottom: 1px solid white;
+  }
+
+  .page-icon {
+    width: 35px;
+    height: 29px;
+  }
+
+  .page-icon-two {
+    width: 40px;
+    height: 33px;
+  }
+
+  .cr-mt {
+    margin-top: 10px;
+  }
+
+}
+
+/* --------------- */
+
+.header {
+  overflow: hidden;
+  padding: 20px 10px;
+}
+
+.header a {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 17px;
+  line-height: 25px;
+}
+
+.header a.logo {
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+}
+
+.header .header-right a:hover {
+  color: rgb(202, 255, 0);
+}
+
+.header .header-right a.active {
+  color: rgb(202, 255, 0);
+}
+
+.overlay .overlay-content a.active {
+  color: rgb(202, 255, 0);
+}
+
+.header-right {
+  float: right;
+  display: unset;
+}
+
+.header-right-mobile {
+  float: right;
+  display: none;
+}
+
+.add-header-bg {
+  background: #010127;
+  transition: .5s linear;
+}
+
+.header-pin {
+  height: 90px;
+}
+
+@media screen and (max-width: 500px) {
+  .header {
+    padding: 5px 10px;
+  }
+
+  .header a {
+    float: none;
+    text-align: left;
+  }
+
+  .header-right {
+    float: none;
+  }
+
+  .header-pin {
+    height: 60px;
+  }
+
+  .header-right {
+    float: right;
+    display: none;
+  }
+
+  .header-right-mobile {
+    float: right;
+    display: unset;
+  }
+}
+
+/* ---------------- */
+
+.overlay {
+  height: 0%;
+  opacity: 0;
+  width: 100%;
+  position: fixed;
+  z-index: 200;
+  top: 0;
+  left: 0;
+  background-color: rgb(1, 1, 39);
+  overflow-y: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 18px;
+  text-decoration: none;
+  font-size: 18px;
+  font-family: sans-serif;
+  font-weight: bold;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 0px;
+  right: 20px;
+  font-size: 40px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay {
+    overflow-y: auto;
+  }
+
+  .overlay a {
+    font-size: 20px
+  }
+
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+/* ------------ */
+
+.modal-content {
+  background-color: rgb(1, 1, 39);
+  color: white;
+}
+
+.modal-img {
+  background-position: center;
+  background-size: cover;
+}
+
+.opacity {
+  display: none;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.modal-body {
+  height: 100%;
+}
+
+.lap-modal {
+  height: 100%;
+  display: unset;
+}
+
+.mobile-modal {
+  height: 100%;
+  display: none;
+}
+
+.small-img {
+  width: 337px;
+  height: 217px;
+  border-radius: 10px;
+  background-position: center right;
+  background-size: cover;
+}
+
+.home-title {
+  margin-top: 145px;
+}
+
+video {
+  position: absolute;
+  min-width: 100%;
+  min-height: 100%;
+  top: 0;
+  z-index: 0;
+}
+
+@media screen and (max-width: 500px) {
+  .lap-modal {
+    display: none;
+  }
+
+  .mobile-modal {
+    display: unset;
+  }
+
+  .modal-body {
+    padding: 0;
+  }
+
+  .small-img {
+    width: 108px;
+    height: 99px;
+  }
+
+  .home-title {
+    margin-top: 65px;
+  }
+
+  video {
+    right: -10%;
+    height: 100%;
+  }
+}
+
+.home-one-sec {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+}
+
+.fade-enter {
+  opacity: 0;
+}
+
+.fade-exit {
+  opacity: 1;
+}
+
+.fade-enter-active {
+  opacity: 1;
+}
+
+.fade-exit-active {
+  opacity: 0;
+}
+
+.fade-enter-active,
+.fade-exit-active {
+  transition: opacity 4000ms;
+}
+
+.c-btn {
+  color: white;
+  padding: 14px 40px;
+  border: 1px solid white;
+  display: inline-block;
+  border-radius: 35px;
+  margin-top: 20px;
+}
+
+.c-btn:hover {
+  cursor: pointer;
+  background-color: rgb(202, 255, 0);
+  color: black;
+}
+
+.c-input {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid white;
+  color: white;
+  width: 100%;
+}
+
+.c-input:hover {
+  border: none;
+  border-bottom: 2px solid rgb(202, 255, 0);
+}
+
+.c-input:focus {
+  border: none;
+  border-bottom: 3px solid rgb(202, 255, 0);
+  outline: none;
+}
+
+.email-input {
+  border-bottom: 3px solid red;
+}
+
+.email-input:hover {
+  border-bottom: 3px solid red;
+}
+
+.email-input:focus {
+  border-bottom: 3px solid red;
+  outline: none;
+}
